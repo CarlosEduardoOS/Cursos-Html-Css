@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio controls preload="metadata" loop><!--Tem 3 tipos de audio (MP3, WAV e OGG)-->
+        <source src="midia/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+        <source src="midia/2009-lovers-carvings-bibio.ogg" type="audio/ogg"><!--Esse .ogg foi so pra ilustrar-->
+        <source src="midia/2009-lovers-carvings-bibio.wav" type="audio/wav"><!--Esse .wav foi so pra ilustrar-->
+        <p>Irmão se o seu navegador não carregou nenhum formato de áudio vai tomar no seu cu.</p><!--Esse parágrafo é pra caso nenhum áudio seja carregado pelo navegador-->
+    </audio>
+    <h1>Reproduzindo Vídeo</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor.</p>
+    <video controls>
+        <source src="midia/one-day.mp4" type="video/mp4">
+    </video>
+    <p>Esse vídeo está hospeado em um site externo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AShGmWyFamY?si=lvnMqfXngrswR6bj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
