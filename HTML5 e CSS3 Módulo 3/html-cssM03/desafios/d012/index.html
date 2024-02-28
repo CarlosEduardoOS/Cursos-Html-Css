@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cordel Moderno</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+        :root {
+            --font-titulo: 'Passion One', cursive;
+            --font-texto: 'Sriracha', sans-serif;
+        }
+
         * {
             margin: 0px;
             padding: 0px;
@@ -16,6 +24,7 @@
         }
 
         header {
+            font-family: var(--font-titulo);
             background-color: black;
             color: white;
             text-align: center;
@@ -24,6 +33,7 @@
         header > h1 {
             padding-top: 50px;
             font-variant: small-caps;
+            font-size: 10vw;
         }
 
         header > p {
@@ -45,6 +55,8 @@
             padding-bottom: 10vh;
             line-height: 2em;
             padding-left: 30px;
+            font-family: var(--font-texto);
+            font-size: 3.5vw;
         }
 
         section.normal {
@@ -57,14 +69,17 @@
             color: white;
             background-image: url(imagens/background001.jpg);
             background-attachment: fixed;
+            background-position: center center;
         }
 
         section.imagem > p {
-            width: 400px;
+            display: inline-block;
+            padding: 4px
             background-color: rgba(0, 0, 0, 0.411);
         }
 
         footer {
+            font-family: var(--font-titulo);
             background-color: black;
             color: white;
             text-align: center;
